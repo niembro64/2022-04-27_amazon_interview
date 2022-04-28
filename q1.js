@@ -33,7 +33,7 @@ const getMid = (s) => {
 
 const numShifts = (s) => {
   if (s.length == 0) {
-    return -1;
+    return 0;
   }
   // if odd remove middle element;
   var numShifts = -1;
