@@ -37,7 +37,7 @@ const getFreqDev = (s) => {
   return maxFreqDev;
 };
 
-s = ["aaabbbcccz", "abbcccddddz", "abaabbaaabbbbz"];
+var s = ["aaabbbcccz", "abbcccddddz", "abaabbaaabbbbz"];
 
 for (var i = 0; i < s.length; i++) {
   // console.log(getFreqDev(s[i]));
