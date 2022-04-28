@@ -32,6 +32,9 @@ const getMid = (s) => {
 };
 
 const numShifts = (s) => {
+  if (s.length == 0) {
+    return -1;
+  }
   // if odd remove middle element;
   var numShifts = -1;
   var r = getReversed(s);
@@ -68,7 +71,7 @@ const numShifts = (s) => {
       // ODD ODD | one to center
       // 100
       numShifts = Math.floor(numMismatches / 4);
-      if (getMid(s) == 0) {
+      if (getMid(s) == "0") {
         numShifts++;
       }
       return numShifts;
@@ -78,10 +81,21 @@ const numShifts = (s) => {
 
 var see = ["0011", "1010", "1001"];
 var seo = ["0001", "0100"];
-var soe = ["00011", "11011", "11000", "10100", "1111000","111111000"];
-var soo = ["00101", "11000", "10001"];
+var soe = [
+  "00011",
+  "11011",
+  "11000",
+  "10100",
+  "1111000",
+  "111111000",
+  "111101100",
+  "111111110000000",
+  "1111111111000000000",
+];
+var soo = ["00111", "11010", "10101", "00111"];
 
-var s = soe;
+sxx = ["10", "1", "", "10001", "01010", "01001"];
+var s = sxx;
 for (var i = 0; i < s.length; i++) {
   console.log(s[i]);
   // console.log(getReversed(s[i]));
