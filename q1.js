@@ -39,7 +39,7 @@ const numShifts = (s) => {
   }
   // if odd remove middle element;
   var numShifts = -1;
-  var r = getReversed(s);
+  // var r = getReversed(s);
   var numOnes = countOnes(s);
   var numMismatches = getNumMismatches(s);
   // console.log(numMismatches);
